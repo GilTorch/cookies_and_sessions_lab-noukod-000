@@ -1,3 +1,6 @@
+<% cart.each do |item|%>
+<%= item %>
+<% end %>
 <form method="POST" action="/add">
     <input id="product" type="text" name="product"/>
     <input type="submit" value="add to cart"/>
