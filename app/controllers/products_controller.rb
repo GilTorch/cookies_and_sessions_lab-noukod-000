@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
  end
 
  def add
-   cart.push(params[:product])
+   session[:cart].push(params[:product])
    redirect_to products_path
  end
 end
