@@ -3,6 +3,6 @@ class ProductsController < ApplicationController
  end
 
  def add
-
+   cart.push(params[:product])
  end
 end
