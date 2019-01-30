@@ -10,5 +10,6 @@ class ApplicationController < ActionController::Base
     cart=session[:cart] || []
     cart.push(params[:cart])
     session[:cart]=cart
+    cart
   end
 end
