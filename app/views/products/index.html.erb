@@ -1,4 +1,4 @@
-<% @cart.each do |item|%>
+<% @cart.each do |item| if @cart %>
 <%= item %>
 <% end %>
 <form method="POST" action="/add">
