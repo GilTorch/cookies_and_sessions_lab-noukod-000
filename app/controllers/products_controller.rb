@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
  def index
-   session[:user_id]="me"
+   session[:id]="me"
    @cart=self.cart
  end
 
