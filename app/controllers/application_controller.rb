@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   end
 
   def cart
-    @cart=session[:cart] || []
+    session[:cart]=
+    cart=session[:cart] || []
   end
 end
