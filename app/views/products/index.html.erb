@@ -1,8 +1,8 @@
-<% if !@cart.nil? %>
-<% @cart.each do |item| %>
+
+<% cart.each do |item| %>
 <%= item %>
 <% end %>
-<% end %>
+
 <form method="POST" action="/add">
     <input id="product" type="text" name="product"/>
     <input type="submit" value="add to cart"/>
