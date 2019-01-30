@@ -1,4 +1,4 @@
-<% session[:cart].each do |item|%>
+<% @cart.each do |item|%>
 <%= item %>
 <% end %>
 <form method="POST" action="/add">
