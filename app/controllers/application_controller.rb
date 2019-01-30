@@ -5,5 +5,6 @@ class ApplicationController < ActionController::Base
 
   def cart
     @cart=session[:cart] || []
+    return @cart
   end
 end
