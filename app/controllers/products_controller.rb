@@ -4,6 +4,6 @@ class ProductsController < ApplicationController
 
  def add
    cart.push(params[:product])
-   redirect_do products_path
+   redirect_to products_path
  end
 end
